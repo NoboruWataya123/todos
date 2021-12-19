@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       <div className='sm:w-3/4 md:w-3/4 xl:w-2/4 w-screen h-screen flex flex-col p-8'>
         <Tab />
         <AddTodo onAdd={ 
-          (name) => {
+          (name: any) => {
             const newTask = { id: (data.length + 1).toString(), name: name, status: "active" };
             setTasks([...task, newTask]);
           }

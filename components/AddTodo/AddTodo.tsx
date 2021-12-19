@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import data from '../../public/data.json';
 
-export default function AddTodo({onAdd}) {
-    const [todo, setTodo] = useState([]);
+export default function AddTodo({onAdd}: any) {
+    const [todo, setTodo] = useState(['']);
 
     const handleSubmit = (e) => {
         e.preventDefault();
