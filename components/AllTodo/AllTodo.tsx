@@ -5,7 +5,7 @@ export default function AllTodo({data}: any) {
     const [status, setStatus] = useState('active');
     let todoClass = 'w-2/3 sm:w-5/6 p-2 text-lg font-medium';
 
-    const handleCheckbox = (e) => {
+    const handleCheckbox = (e: any) => {
         const id = e.target.id;
         const index = data.findIndex((item: any) => item.id === id);
         data[index].status = 'complete';

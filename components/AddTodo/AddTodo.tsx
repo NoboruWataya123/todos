@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import data from '../../public/data.json';
 
 export default function AddTodo({onAdd}: any) {
-    const [todo, setTodo] = useState(['']);
+    const [todo, setTodo] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
         if (todo.trim() === '') {
             return;
@@ -19,7 +19,7 @@ export default function AddTodo({onAdd}: any) {
         setTodo('');
     }
 
-    function handleChange(e) {
+    function handleChange(e: any) {
         setTodo(e.target.value);
       }
     
